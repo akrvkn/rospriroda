@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /*assets
+
+Host: https://www.rospriroda.ru
+
+User-agent: Googlebot
+Disallow: /*assets
+
+User-agent: *
+sitemap: https://www.rospriroda.ru/sitemap.xml
