@@ -1,11 +1,10 @@
 _site
 .sass-cache
+.jekyll-cache
 .jekyll-metadata
 .idea
 book
-*.php
 .DS_Store
 !/img/book/
 node_modules
-src
 Gemfile.lock

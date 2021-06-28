@@ -18,8 +18,9 @@ email: support@superuser.su
 description: > # this means to ignore newlines until "baseurl:"
   география, климат, ресурсы
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+url: "https://www.rospriroda.ru" # the base hostname & protocol for your site, e.g. http://example.com
+link: "https://www.rospriroda.ru"
+excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
 kramdown:
