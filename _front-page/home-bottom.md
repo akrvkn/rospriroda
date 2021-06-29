@@ -3,6 +3,15 @@ title: Home-bottom
 front-page: home-bottom
 ---
 
+<div class="video-frame">
+<div class="video-wrap">
+    <iframe id="ytplayer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/?listType=playlist&list=PLMDGKSNNXeuJh5wu86IyxsBgqhWKFG7-i&loop=1&autoplay=0&autohide=1&modestbranding=0&rel=0&showinfo=1&controls=1&disablekb=0&enablejsapi=1&iv_load_policy=1&origin=https://www.rospriroda.ru"></iframe>
+</div>
+</div>
+
+*******
+
+
 ![](/img/book/583.jpg)
 
 ### Запасы воды
