@@ -23,10 +23,16 @@ preg_match_all($textPattern, $article, $txtArr);
 unset($txtArr[1][count($txtArr[1])-1]);
 
 $str = '';
+$counter = 0;
 foreach($txtArr[1] as $par){
     preg_match($stopWords, $par, $res);
     if(empty($res)){
-        $str .= trim(strip_tags($par))."\n\n";
+    	if($counter < 1){
+    		$str .= trim(strip_tags($par))."<!--more-->";
+        }else{
+        	$str .= trim(strip_tags($par))."\n\n";
+        }
+        $counter++;
     }
 }
 
@@ -34,7 +40,7 @@ $dir = '../_posts/';
 $fileName = $dir.date('Y-m-d').'-'.substr($slug, 0, -5).'.md';
 if(strstr($match[1], 'ria.ru')){
     preg_match($titleDivPattern, $article, $titleMatch);
-            var_dump($titleMatch);
+           
 }else{
     preg_match($titlePattern, $article, $titleMatch);
 }
@@ -68,5 +74,7 @@ category: lenta
 EOD;
 
 $md .= $str."<!--more-->\n\n".$img;
+   if(mb_strlen($str) > 100){	
     file_put_contents($fileName, $md);
+    }
 ?>

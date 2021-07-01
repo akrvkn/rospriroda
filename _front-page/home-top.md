@@ -9,7 +9,7 @@ front-page: home-top
 {% for post in cat[1] limit: 1 %}
 ### {{ post.title }}
 
-{{ post.content }}
+{{ post.excerpt }}
 
 [Подробнее]({{ post.url }})
 
